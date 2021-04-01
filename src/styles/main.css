@@ -1,0 +1,154 @@
+/*  --------------------
+  DASHBOARD STYLES
+  -------------------- */
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#sidebar-header .dropdown-menu.show {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.content {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.content.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 992px) {
+  .g-lg-3,
+  .gx-lg-3 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+.g-2,
+.gx-2 {
+  margin-left: 0.4375rem;
+  margin-right: 0.4375rem;
+}
+
+.g-2 > *,
+.gx-2 > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.card {
+  box-shadow: 0 6px 12px rgba(140, 152, 164, 0.075);
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+  border-radius: 0.75rem;
+}
+
+.card-header:first-child {
+  border-radius: 0.6875rem 0.6875rem 0 0;
+}
+
+.card-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-header {
+  padding: 1.3125rem 1.3125rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 0.0625rem solid rgba(231, 235, 243, 0.7);
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.3125rem;
+}
+
+.card-subtitle {
+  display: block;
+  color: #8c98a4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03125rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  display: block;
+  color: #1e2022;
+  margin-bottom: 0;
+}
+
+.page-header {
+  border-bottom : .0625rem solid #e7eaf3;
+  padding-bottom: 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.page-header-title {
+  margin-bottom: .25rem
+}
